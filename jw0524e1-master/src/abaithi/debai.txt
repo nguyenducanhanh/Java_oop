@@ -1,0 +1,57 @@
+Câu 1: Java OOP (hướng đối tượng) (65 điểm)
+- Tạo interface Activity gồm các phương thức trừu tượng sau: (5 điểm)
+o void add(); //Thêm thông tin
+o void edit(); //Sửa thông tin
+o void remove(); // Xoá thông tin
+- Tạo interface Search gồm có các phương thức trừu tượng sau: (5 điểm)
+o void searchByName(String name); Tìm kiếm theo name
+- Tạo lớp Input gồm các phương thức (5 điểm)
+o int inputScannerInt(); : Tạo hàm nhập từ bàn phím kiểm tra nhập sai kiểu int thì 
+yêu cầu nhập lại.
+o String inputScannerString();: Tạo hàm nhập từ bàn phím nhập sai kiểu String thì 
+yêu cầu nhập lại.
+- Tạo lớp Book(Sách) khai báo các thuộc tính như bảng phía dưới với access modifiers là 
+private và cung cấp hàm getter, setter cho đối tượng. (5 điểm)
+- Tạo lớp BookBackend triển khai thực hiện interface Activity và Search và extent lớp 
+Input, thực hiện các công việc sau: (40 điểm)
+o menu(): Hiển thị danh sách menu chức năng, khi nhập số từ bàn phím thì gọi ra 
+chức năng tương ứng: (10 điểm)
+▪ 1: Thêm
+▪ 2: Sửa 
+▪ 3: Xoá
+▪ 4: Tìm kiếm
+▪ 5: Thoát
+o add(): Cho phép người dùng nhập thông tin của sách, các thông tin được mô tả
+dưới bảng. (5 điểm)
+Phòng Đào tạo
+ĐỀ THI
+Môn: Lập trình hướng đối tượng Java
+Thời gian: 120 phút
+Mã đề thi: OOPJ
+o edit(): Cho phép người dụng nhập mã (ID) cần sửa, nếu mã trùng thì cho phép 
+nhập thông tin tên sách mới, nhà xuất bản mới, nếu không trùng thì thông báo 
+“Không trùng mã”. (10 điểm)
+o remove(): Cho phép nhập mã(ID) cần xoá, nếu mã trùng thì xoá sách theo id, nếu 
+không trùng thì thông báo “Không trùng mã”. (5 điểm)
+o searchByName (String name): Tìm kiếm thông tin sách theo tên. Nếu có hiển thị
+thông tin tất cả các sách có tên như từ khoá tìm kiếm. Nếu không có hiển thị
+thông báo “Không tìm thấy” (10 điểm)
+- Tạo lớp Program chứa phương thức: (5 điểm)
+o main(): Khai báo đối tượng lớp BookController và gọi phương thức menu để
+người dùng chọn chức năng.
+Book Mô tả
+id Mã sách
+name Tên sách
+publishing Nhà xuất bản
+Câu 2: Java IO & Collections (35 điểm)
+Cho file book.txt lưu trữ thông tin sách (các thông tin như bảng trên), mỗi thông tin lưu trữ cách 
+nhau bằng dấu chấm phẩy “;”. Yêu cầu:
+- Đọc nội dung file, sử dụng ArrayList lưu trữ toàn bộ thông tin sách đọc được. (20 điểm)
+- In ra màn hình tổng số sách và hiển thị đầy đủ thông tin sách(5 điểm)
+- Sắp xếp lại danh sách theo tên sách được sắp xếp theo thứ tự tăng dần. In lại danh sách 
+sau khi sắp xếp. (10 điểm)
+Chú ý: Nội dung file text có tên book.txt sinh viên tự tạo theo mẫu dưới đây, không cần nộp file 
+này cùng bài thi:
+101;Sach A;NXB1
+102;Sach B;NXB2
+…..
